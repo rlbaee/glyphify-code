@@ -4,9 +4,12 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"front:dev": "npx vite --config config/vite.config.ts --host",
+		"front:dev": "vite --config config/vite.config.ts --host",
+		"build": "vite build --config config/vite.config.ts",
+		"preview": "vite preview --config config/vite.config.ts",
 		"back:dev": "npx tsx main.tsx"
 	},
+
 	"dependencies": {
 		"cors": "^2.8.6",
 		"express": "^5.2.1",
