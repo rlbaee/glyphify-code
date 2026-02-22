@@ -5,16 +5,19 @@
 	"type": "module",
 	"scripts": {
 		"front:dev": "vite --config config/vite.config.ts --host",
+		"back:dev": "npx tsx backend/main.ts",
 		"build": "vite build --config config/vite.config.ts",
-		"preview": "vite preview --config config/vite.config.ts",
-		"back:dev": "npx tsx main.tsx"
+		"preview": "vite preview --config config/vite.config.ts"
 	},
-
 	"dependencies": {
+		"@phosphor-icons/react": "^2.1.10",
+		"@tailwindcss/vite": "^4.2.0",
+		"@types/tailwindcss": "^3.0.11",
 		"cors": "^2.8.6",
 		"express": "^5.2.1",
 		"react": "^19.2.0",
-		"react-dom": "^19.2.0"
+		"react-dom": "^19.2.0",
+		"tailwindcss": "^4.2.0"
 	},
 	"devDependencies": {
 		"@types/express": "^5.0.6",

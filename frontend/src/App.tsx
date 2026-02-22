@@ -1,18 +1,7 @@
-import "./App.css";
+import Input from "./components/Input";
 
 function App() {
-	const formData = new FormData();
-	return (
-		<input
-			type="file"
-			accept="image/*"
-			placeholder="Take a photo"
-			onChange={(e) => {
-				const file = e.target.files?.[0];
-				if (file) console.log(file);
-			}}
-		/>
-	);
+	return <Input />;
 }
 
 export default App;
